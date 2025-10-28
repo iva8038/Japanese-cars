@@ -1,0 +1,226 @@
+body {
+    background-color:  #BFBFBF;
+    margin: 20px;
+} 
+nav {
+    background-color: #4d121a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    padding: 1%;
+    display: flex;
+    gap: 10%;
+    position: fixed; 
+    top: 0;           
+    left: 0;
+    width: 100%;      
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    z-index: 1000;
+    text-align: center;
+    justify-content: center;
+}
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 60px;
+    text-align: center;
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #2B2A4C;
+    font-size: larger;
+}
+fieldset {
+    background-color: #e8e8e8 ;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #48131a;
+    border-radius: 5pt;
+    padding: 20px;
+}
+form {
+    max-width: 550px;
+    background-color: #e8e8e8;
+    padding: 20px;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+legend {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #48131a;
+    font-weight: bold;
+}
+article {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.menu {
+    color: #BFBFBF;
+    transition: color 0.3s ease;
+    text-decoration: none;   
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.menu:hover {
+    color: white;
+    text-shadow: 0 0 5px #8F1600;
+}
+.cars {
+    color: #635a48;
+    transition: color 0.3s ease;
+    text-decoration: none;   
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.cars:hover {
+    color: #48131a;
+}
+.more {
+    display: block;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 8px;
+    text-align: left;
+    color: #635a48;
+    transition: color 0.3s ease;
+    text-decoration: none;   
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.more:hover {
+    color: #48131a;
+}
+aside {
+    flex-shrink: 0;
+    width: 280px;
+    position: sticky;
+    top: 15px;
+    background-color: #e8e8e8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: left;
+    height: 35vh;
+    border: 0cm;
+    max-width: 95%;
+}
+aside h4 {
+    color: #2B2A4C;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 0 8px;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-align: center;
+}
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+main {
+    padding: 20px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    max-width: 70%;
+}
+.underh {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #2B2A4C;
+    font-size: larger;
+    text-align: center;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+li {
+    color: #635a48;
+    transition: color 0.3s ease;
+    text-decoration: none;   
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+li:hover {
+    color: #48131a;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0.5;
+    margin-left: 0.5;
+}
+hr {
+    border: 1px solid #48131a;
+}
+.articlejdm {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #2B2A4C;
+    font-size: larger;
+}
+
+label {
+    display: block;
+}
+input {
+   border-radius: 2pt;
+   background-color: white;
+   color: black;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 8px;
+   font-size: 1.0em;
+   transition: background-color 0.3s, color 0.3s;
+   margin-right: 10px;
+}
+input:hover {
+    background-color: #2B2A4C;
+    color: white;
+}
+button {
+    border-radius: 2pt;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.0em;
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: 10px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #2B2A4C;
+    color: white;
+}
+.submit {
+    cursor: pointer;
+}
+.myfile {
+    background-color: #e8e8e8;
+}
+.myfile:hover {
+    background-color: #e8e8e8;
+    color: black;
+}
+.menu-toggle {
+    display: none;
+}
+@media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      position: static;
+      width: 100%;
+      border-radius: 5pt;
+    }
+
+    main {
+      margin-top: 0%;
+    }
+    
+    aside {
+      order: -1;
+      width: 100%;
+      height: fit-content;
+    }
+}
